@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- bootstrap and css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Date Range Picker -->
+	<script src="js/moment.js"></script>
+	<script type="text/javascript" src="js/daterangepicker.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
+
+	<!-- jquery ui -->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	<!-- data table -->
+	<script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+
+	<!-- high charts -->
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/data.js"></script>
+	<script src="https://code.highcharts.com/highcharts-more.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+	<!-- this project specific -->
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/index.js"></script>
+
+
+</head>
+<body class="level1">
+
+	<div class="card_dark"> 
+
+		<div class="fancyheader">PLM User Activity Analytics</div> 
+
+		<div style="text-align: center;">
+
+			<span class="search_guide_text">run analytics over date range</span>
+			<input id="inputDateRange" class="search_guide_input_text" name="inputDateRange" type="text" size="40">
+
+			<span class="search_guide_text">I want to see</span>
+			<select id="entity" class="search_guide_input_select">
+				<option value="user">User Activity</option>
+				<option value="dashboard">Popular Dashboard</option>
+				<option value="filter">Popular Filter</option>
+				<option value="groupBy">Popular GroupBy</option>
+				<option value="login">User Login Count</option>
+			</select>
+
+		</div>
+		
+		<div class="search_guide_button_div">
+			<button id="load_chart" class="search_guide_button" >Load Chart !!!</button>
+		</div>
+
+		
+
+	</div>
+	<div class="card_level1">
+		<div id="container" style="min-width: 300px; height: 400px; margin: 0 auto"></div>
+	</div>
+
+	
+
+</body>
+</html>
+
+
